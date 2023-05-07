@@ -1,0 +1,48 @@
+.FormContainer {
+    border: 2px solid;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+}
+
+.FormContainer form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.inputContainer {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2rem;
+}
+
+.BtnContainer {
+    padding:0px 1rem;
+    width: 28%;
+    margin: 2rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.BtnContainer button{
+    padding: 5px;
+    font-size: large;
+}
+.SizeInpContainer{
+    display: flex;
+    flex-direction: column;
+}
+.SizeInps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.SizeInps input{
+    width: 2rem;
+    margin:0.2rem 0.5rem;
+}

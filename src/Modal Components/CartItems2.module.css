@@ -1,0 +1,59 @@
+.CartContainer{
+    background-color:rgb(244, 244, 244);
+    position: fixed;
+    padding: 0.5rem;
+    top: 10%;
+    left:33%;
+    width: 35%;
+    margin: auto;
+    border:2px solid white;
+    border-radius: 12px;
+    z-index: 30;
+    max-height: 80%;
+    overflow: scroll;
+}
+.heading{
+    text-align: center;
+    font-family: cursive;
+    margin: 0.5rem;
+}
+.list{
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom: 3px solid rgb(207, 145, 123);
+
+}
+.TotalAmount{
+    display:flex;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    /* border: 2px solid black; */
+}
+.TotalAmount .span1,h3{
+    color: rgb(233, 96, 46);
+    font-weight: 900;
+}
+.TotalAmount .span2, li .span2{
+    color: rgb(0, 0, 0);
+    font-weight:bold;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.3rem;
+}
+.buttons .button1,.buttons .button2{
+    padding: 8px;
+    margin: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 2px solid rgb(220, 95, 6) ;
+}
+
+
+.button1:hover,.button2:hover{
+    background-color: rgb(220, 95, 6);
+    color: aliceblue;
+}

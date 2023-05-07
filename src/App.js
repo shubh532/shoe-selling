@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react';
+import AddShoesForm from './UI Componenrts/AddShoesForm';
+import ContextProvider from './ContextAapi/ContextProvider';
+import ShowProducts from './UI Componenrts/ShowProduct';
+import CartItem2 from './Modal Components/CartItems2';
+
 
 function App() {
+
+  const [showcart, unshowcart] = useState(false);
+  const showCartBtnHandle = (event) => {
+    event.preventDefault()
+    unshowcart(true);
+  };
+
+  const UnCartBtnHandle = (event) => {
+    event.preventDefault()
+    unshowcart(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ContextProvider>
+      {showcart&&<CartItem2 UnCartBtnHandle={UnCartBtnHandle}/>}
+      <AddShoesForm showCartBtnHandl={showCartBtnHandle}/>
+      <ShowProducts/>
+    </ContextProvider>
   );
 }
 
